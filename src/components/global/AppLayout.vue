@@ -6,7 +6,7 @@
 
             <AppNav />
 
-            <v-main>
+            <v-main style="padding-top: 130px;">
                 <slot></slot>
             </v-main>
 
