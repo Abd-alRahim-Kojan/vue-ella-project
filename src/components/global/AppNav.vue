@@ -1,6 +1,6 @@
 <template>
     <div class="nav-bar">
-        <v-app-bar color="#02218f" class="py3" height="fit-content">
+        <v-app-bar color="#02218f" class="py3" height="fit-content" absolute>
             <v-container fluid>
                 <v-row>
                     <v-col cols="3">
@@ -18,7 +18,7 @@
                     </v-col>
 
                     <v-col cols="4">
-                        <div class="parent text-white d-flex align-center justify-end" style="gap: 30px;">
+                        <div class="parent text-white d-flex align-center justify-end ga-8">
                             <div class="available me-6">
                                 <span>Available 24/7</span>
                                 <br>
@@ -35,8 +35,7 @@
                                 <span>Sign in</span>
                             </div>
 
-                            <div class="wishlists d-flex flex-column align-center" style="cursor: pointer;"
-                                @click="toggleCart">
+                            <div class="wishlists d-flex flex-column align-center cursor-pointer" @click="toggleCart">
                                 <v-badge color="#007fff" content="2" location="right top" offset-x="-10"
                                     style="z-index: 1;"></v-badge>
                                 <v-icon color="orange" size="large">mdi-cart-outline</v-icon>
@@ -46,7 +45,7 @@
                     </v-col>
 
                     <v-col cols="7">
-                        <ul class="links d-flex text-white" style="list-style: none; gap: 30px;">
+                        <ul class="links d-flex text-white ga-8" style="list-style: none;">
                             <li>Theme Demo</li>
                             <li>Shop</li>
                             <li>Prouducts</li>
@@ -56,16 +55,16 @@
                         </ul>
                     </v-col>
 
-                    <v-col cols="5" class="d-flex justify-end" style="gap: 20px;">
-                        <div class="help d-flex align-center" style="gap: 5px;">
+                    <v-col cols="5" class="d-flex justify-end ga-5">
+                        <div class="help d-flex align-center ga-2">
                             <v-icon color="orange" size="large">mdi-face-agent</v-icon>
                             <span>Help</span>
                         </div>
 
-                        <div class="lang d-flex align-center" style="gap: 5px;">
+                        <div class="lang d-flex align-center ga-2">
                             <v-menu>
                                 <template v-slot:activator="{ props }">
-                                    <div v-bind="props" class="d-flex align-center" style="gap: 5px; cursor: pointer;">
+                                    <div v-bind="props" class="d-flex align-center ga-2 cursor-pointer">
                                         <v-icon color="orange" size="large">mdi-translate</v-icon>
                                         <span>{{ selectedLang.lang }} / {{ selectedLang.currency }}</span>
                                         <v-icon color="orange" size="large">mdi-chevron-down</v-icon>

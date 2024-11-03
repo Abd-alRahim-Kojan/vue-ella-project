@@ -5,6 +5,7 @@
             <CartDrawer />
 
             <AppNav />
+            <FixedNav />
 
             <v-main style="padding-top: 130px;">
                 <slot></slot>
@@ -20,10 +21,11 @@
 import AppNav from './AppNav.vue';
 import CartDrawer from './CartDrawer.vue';
 import AppFooter from './AppFooter.vue';
+import FixedNav from './FixedNav.vue';
 
 export default {
     components: {
-        AppNav, CartDrawer, AppFooter
+        AppNav, CartDrawer, AppFooter, FixedNav
     },
     data() {
         return {
